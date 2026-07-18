@@ -79,7 +79,7 @@ with open("data/access.log", "w") as file:
         file.write(log + "\n")
 
 safe_data = {
-    "employees": safe_ips
+    "safe_ips": safe_ips
 }
 
 with open("data/safe-ips.json", "w") as file:
