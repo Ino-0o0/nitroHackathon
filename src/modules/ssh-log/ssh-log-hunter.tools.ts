@@ -1,5 +1,4 @@
-import { Tool, ExecutionContext } from '@nitrostack/core';
-import { z } from 'zod';
+import { ToolDecorator as Tool, Widget, ExecutionContext, z } from '@nitrostack/core';
 import fs from 'fs';
 
 export class LogHunterTools {
@@ -11,7 +10,7 @@ export class LogHunterTools {
     }),
     examples: {
       request: {
-        file_path: 'data/access.log'
+        file_path: ' data/access.log'
       },
       response: {
         entries: [
