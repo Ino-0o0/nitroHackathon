@@ -1,5 +1,6 @@
 import { McpApp, Module, ConfigModule } from '@nitrostack/core';
 import { CalculatorModule } from './modules/calculator/calculator.module.js';
+import { SshLogModule } from './modules/ssh-log/ssh-log.module.js';
 import { SystemHealthCheck } from './health/system.health.js';
 
 /**
@@ -23,7 +24,8 @@ import { SystemHealthCheck } from './health/system.health.js';
   description: 'Root application module',
   imports: [
     ConfigModule.forRoot(),
-    CalculatorModule
+    CalculatorModule,
+    SshLogModule
   ],
   providers: [
     // Health Checks
@@ -31,4 +33,3 @@ import { SystemHealthCheck } from './health/system.health.js';
   ]
 })
 export class AppModule {}
-
